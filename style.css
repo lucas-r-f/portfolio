@@ -322,6 +322,7 @@ header{
 
 .projetos{
     display: flex;
+    margin-bottom: 5rem;
     justify-content: space-evenly;
 }
 
@@ -454,7 +455,7 @@ header{
     position: relative;
 }
 
-.filds{
+.field{
     background: transparent;
     border: none;
     width: 20rem;
