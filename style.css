@@ -66,7 +66,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #b4006c;
+    background-color: #00aeff;
     color: #fff;
     font-family: var(--font-action);
     opacity: 0;
@@ -76,7 +76,7 @@ html{
 .hamburguer span::before{
     content: "";
     position: absolute;
-    border-right: .5rem solid #b4006c;
+    border-right: .5rem solid #00aeff;
     border-top: .5rem solid transparent;
     border-left: .5rem solid transparent;
     border-bottom: .5rem solid transparent;
@@ -152,9 +152,9 @@ header{
     color: #fff;
     letter-spacing: .1rem;
     text-transform: uppercase;
-    background: #FF0099;  
-    background: -webkit-linear-gradient(to left, #493240, #FF0099);  
-    background: linear-gradient(to left, #493240, #FF0099); 
+    background: #00aeff;  
+    background: -webkit-linear-gradient(to left, #324948, #00aeff);  
+    background: linear-gradient(to left, #324649, #00aeff); 
     padding:1rem 2rem;
     border: none;
     border-radius: 10px;
@@ -210,7 +210,7 @@ header{
 }
 
 .menu-link:hover{
-    color: #b4006c;
+    color: #00aeff;
 }
 
 .social-media{
@@ -222,7 +222,7 @@ header{
 }
 
 .social-media i{
-    background-color: #b4006c;
+    background-color: #00aeff;
     color: #fff;
     height: 2.5rem;
     width: 2.5rem;
@@ -277,6 +277,7 @@ header{
 
 .sessao-conhecimentos{
     background-color: #f5f5f5;
+    height: 101vh;
 }
 
 .sessao-header{
@@ -290,8 +291,9 @@ header{
     font-family: var(--font-primary);
     font-size: 3rem;
     color: #4b4b4b;
-    border-bottom: solid 3px #b4006c;
+    border-bottom: solid 3px #00aeff;
     margin-bottom: 5rem;
+    margin-top: 2rem;
 }
 
 .conhecimento-header{
@@ -312,7 +314,8 @@ header{
 
 .conhecimento-text{
     font-family: var(--font-secundary);
-    margin-top: 0.1rem;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
 }
 
 .conhecimento-img-wrapper{
@@ -326,23 +329,30 @@ header{
     width: 100%;
 }
 
+.sessao-projetos{
+    height: 90vh;
+}
+
 .projetos{
     display: flex;
-    margin-bottom: 5rem;
     justify-content: space-evenly;
 }
 
 .card{
     width: 18rem;
-    height: 25rem;
+    height: 28rem;
     position: relative;
+    border-radius: .8rem;
+    -webkit-box-shadow: 0px 0px 41px -5px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px 0px 41px -5px rgba(0,0,0,0.52);
+    box-shadow: 0px 0px 41px -5px rgba(0,0,0,0.52);
 }
 
 .card-img-wrapper{
     width: 100%;
     height: 100%;
     background-color: #262626;
-    border-radius: .5rem;
+    border-radius: .6rem;
 }
 
 .card-img-wrapper img{
@@ -378,7 +388,7 @@ header{
 .card-info h3{
     font-family: var(--font-secundary);
     font-size: bolder;
-    color: #ff4081;
+    color: #00aeff;
     margin-bottom: .5rem;
 }
 
@@ -391,15 +401,16 @@ header{
 }
 
 .btn{
-    background: #FF0099;  
-    background: -webkit-linear-gradient(to left, #493240, #FF0099);  
-    background: linear-gradient(to left, #493240, #FF0099);
+    background: #00aeff;  
+    background: -webkit-linear-gradient(to left, #493240, #00aeff);  
+    background: linear-gradient(to left, #324549, #00aeff);
     font-family: var(--font-action);
     font-size: 1rem;
     color: #eee;
     border-radius: .5rem;
     border: none;
     box-shadow: 0 .1rem .8rem rgba(0, 0,0, .4);
+    cursor: pointer;
 }
 
 .card-info button{
@@ -448,6 +459,7 @@ header{
     color: #272727;
     font-size: 3rem;
     font-weight: lighter;
+    text-align: center;
 }
 
 .sessao-contato form{
@@ -464,45 +476,24 @@ header{
 .field{
     background: transparent;
     border: none;
-    width: 20rem;
+    width: 27rem;
     font-size: 1.5rem;
     font-family: var(--font-secundary);
     border-bottom: 2px dashed #636363;
-    height: 3rem;
+    height: 1.5rem;
     outline: none;
     margin: 1rem 0;
-}
-
-.input-group textarea{
-    padding-top: 1rem;
-    max-width: 25rem;
-    max-height: 3rem;
+    padding-top: 2rem;
 }
 
 .field-label{
     position: absolute;
     left: 0;
-    top: 2rem;
+    top: 1rem;
     font-size: 1.2rem;
     font-family: var(--font-secundary);
     text-transform: uppercase;
     transition: all 0.3s;
-}
-
-.field:focus ~ label{
-    top: 0;
-    font-size: 1rem;
-}
-.field:focus{
-    border-bottom: 1px solid;
-}
-
-.btn-submit{
-    width: 100%;
-     height: 2rem;
-     font-size: 1.2rem;
-     text-transform: uppercase;
-     margin-top: 1rem;
 }
 
 footer{
