@@ -484,6 +484,11 @@ header{
     outline: none;
     margin: 1rem 0;
     padding-top: 2rem;
+    transition: 1s;
+}
+
+.field:hover{
+    border-bottom: 2px dashed #00aeff;
 }
 
 .field-label{
@@ -521,6 +526,11 @@ footer{
     margin: 0 2rem;
     color: #a7a7a7;
     font-size: 1.3rem;
+    transition: 0.5s;
+}
+
+.social-list a:hover{
+    color: #00aeff;
 }
 
 .social-list ul{
